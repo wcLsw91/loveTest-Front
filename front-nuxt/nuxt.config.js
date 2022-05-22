@@ -52,7 +52,7 @@ export default {
    */
   axios: {
     proxy: process.env.NODE_ENV !== 'production',
-    baseURL: '/',
+    baseURL: 'http://localhost:3000',
     debug: false
   },
   proxy: {
