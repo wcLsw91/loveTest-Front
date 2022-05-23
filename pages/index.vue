@@ -8,7 +8,10 @@
 <!--        {{ mountain.title }}-->
 <!--      </li>-->
 <!--    </ul>-->
-    <div>{{data}}</div>
+
+<!--    <div>{{data}}</div>-->
+
+    <LazyMainList/>
   </div>
 </template>
 
@@ -21,10 +24,10 @@ export default {
       data:{},
     }
   },
-  async asyncData({ $axios, $config }) {
-    const data = await $axios.$get(`/api/question/1`)
-    return { data }
-  },
+  // async asyncData({ $axios, $config }) {
+  //   const data = await $axios.$get(`/api/question/1`)
+  //   return { data }
+  // },
   // async fetch() {
   //   this.mainList = await fetch(
   //     'https://api.nuxtjs.dev/mountains'
